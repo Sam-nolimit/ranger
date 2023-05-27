@@ -12,7 +12,7 @@
 /.next/
 /out/
 /.env
-/components
+
 
 # production
 /build
