@@ -1,4 +1,4 @@
-interface board {
+interface Board {
     columns: Map<TypedColumn, Column>
 }
 
@@ -9,7 +9,7 @@ interface Column {
     todos: Todo[],
 }
 
-interface Todo {
+interface Todo{
     $id: string,
     $createdAt: string,
     // $updatedAt: string,
