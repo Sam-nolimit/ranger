@@ -12,7 +12,6 @@ interface Column {
 interface Todo{
     $id: string,
     $createdAt: string,
-    // $updatedAt: string,
     title: string,
     status: TypedColumn,
     image?: Image,

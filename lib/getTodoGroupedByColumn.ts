@@ -5,9 +5,10 @@ export const getTodoGroupedByColumn = async () => {
         process.env.NEXT_PUBLIC_DATABASE_ID!,
         process.env.NEXT_PUBLIC_TODOS_COLLECTION_ID!
     );
+
     const todos = data.documents;
 
-    console.log(todos);
+    // console.log(todos);
 
     const columns = todos.reduce((acc, todo) => {
         if (!acc.get(todo.status)) {
