@@ -11,7 +11,7 @@
 # next.js
 /.next/
 /out/
-
+/.env/local
 
 
 # production
@@ -20,7 +20,7 @@
 # misc
 .DS_Store
 *.pem
-
+/components
 
 
 # debug
