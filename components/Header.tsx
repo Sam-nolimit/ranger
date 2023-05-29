@@ -8,6 +8,7 @@ import Avatar from "react-avatar";
 import { useBoardStore } from "@/store/BoardStore";
 import { useEffect, useState } from "react";
 import fetchSuggestion from "@/lib/fetchSuggestion";
+
 function Header() {
   const [board, searchString, setSearchString] = useBoardStore((state) => [
     state.board,
@@ -26,6 +27,8 @@ function Header() {
       setSuggestion(suggestion);
       setLoading(false);
     };
+     
+    fetchSuggestionFunc();
   }, [board]);
 
   return (
@@ -92,7 +95,7 @@ function Header() {
 
           {suggestion && !loading
             ? suggestion
-            : `GPT-5 is summarising your tasks for the day ...`}
+            : "GPT is summarising your tasks for the day ..."}
         </p>
       </div>
     </header>

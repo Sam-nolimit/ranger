@@ -6,13 +6,14 @@ const formatTodoForAI = async (board: Board) => {
         return map;
     }, {} as { [key in TypedColumn]: Todo[] })
 
-    // reduce to key: value(value)
-
+    // reduce to key: value(value) 
     const flatArrayCounted = Object.entries(flatArray).reduce(
         (map, [key, value]) => {
             map[key as TypedColumn] = value.length;
             return map;
-        }, {} as { [key in TypedColumn]: number }
+        }, 
+        {} as { [key in TypedColumn]: number }
+        
     );
 
     return flatArrayCounted;
