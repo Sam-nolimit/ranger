@@ -1,7 +1,7 @@
 import openai from "@/openai";
 import { NextResponse } from "next/server";
 
-export async function POST(request:Response){
+export async function POST(request:Request){
     // todo in the body of the post resquest
 
     const {todos} = await request.json();
@@ -35,5 +35,4 @@ export async function POST(request:Response){
     console.log(data.choices[0].message);
     
     return NextResponse.json(data.choices[0].message);
- 
 }
