@@ -3,7 +3,7 @@ const fetchSuggestion = async (board:Board) => {
 
     const todos = formatTodoForAI(board);
     console.log('FORMATTED TODO to send >> ', todos)
-    const response = await fetch('/api/generateSummary',{
+    const res = await fetch('/api/generateSummary',{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -13,7 +13,7 @@ const fetchSuggestion = async (board:Board) => {
         })
     })
 
-    const GPTData = await response.json();
+    const GPTData = await res.json();
     const {content} = GPTData;
 
     return content;
