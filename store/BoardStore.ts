@@ -1,6 +1,7 @@
 import { databases } from '@/appwrite';
 import { getTodoGroupedByColumn } from '@/lib/getTodoGroupedByColumn';
 import { title } from 'process';
+import { isJSDoc } from 'typescript';
 import { create } from 'zustand';
 
 interface BoardState {
@@ -11,8 +12,6 @@ interface BoardState {
     searchString:string; 
     setSearchString:(searchString:string)=>void;
 }
-
-
 
  export const useBoardStore = create<BoardState>((set) => ({
     board: {
