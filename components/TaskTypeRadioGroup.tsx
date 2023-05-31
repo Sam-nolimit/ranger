@@ -24,7 +24,7 @@ const types = [
 ];
 
 function TaskTypeRadioGroup() {
-  const [setNewTaskType, newTaskType] = useBoardStore((state) => [
+  const [setNewTaskType, newTaskType] = useBoardStore((state: { setNewTaskType: any; newTaskType: any; }) => [
     state.setNewTaskType,
     state.newTaskType,
   ]);
