@@ -1,3 +1,4 @@
+// import Modal from "@/components/Modal";
 import Modal from "@/components/Modal";
 import "./globals.css";
 import { Inter } from "next/font/google";
