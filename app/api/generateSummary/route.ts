@@ -5,7 +5,7 @@ export async function POST(request:Request){
     // todo in the body of the post resquest
 
     const {todos} = await request.json();
-    console.log(todos)
+    // console.log(todos)
 
     //communicate with openAI
     const response = await openai.createChatCompletion({
@@ -31,8 +31,8 @@ export async function POST(request:Request){
         ]
     });
     const {data} = response;
-    console.log("DATA is:",data);
-    console.log(data.choices[0].message);
+    // console.log("DATA is:",data);
+    // console.log(data.choices[0].message);
     
     return NextResponse.json(data.choices[0].message);
 }

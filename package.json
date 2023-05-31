@@ -10,6 +10,7 @@
     "lint": "npm run check-types && next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.18",
     "@types/node": "20.2.4",
     "@types/react": "18.2.7",
