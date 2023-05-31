@@ -13,7 +13,7 @@ const fetchSuggestion = async (board:Board) => {
         })
     })
 
-    const GPTData = await res.json();
+    const GPTData = await res?.json();
     const {content} = GPTData;
 
     return content;
