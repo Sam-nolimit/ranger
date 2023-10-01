@@ -27,7 +27,7 @@ function Header() {
       setSuggestion(suggestion);
       setLoading(false);
     };
-     
+
     fetchSuggestionFunc();
   }, [board]);
 
@@ -54,7 +54,7 @@ function Header() {
         />
         <Image
           src={companyLogo}
-          //   src="https://links.papareact.com/c2cdd5"
+          // src="https://links.papareact.com/c2cdd5"
           alt="ATWS Logo"
           width={400}
           height={300}
@@ -72,7 +72,7 @@ function Header() {
               className="flex-1 h-10 px-2 outline-none rounded-lg"
             />
             <button type="submit" hidden>
-              Search
+              Searchhhhh
             </button>
           </form>
           <Avatar

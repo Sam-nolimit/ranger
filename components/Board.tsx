@@ -94,7 +94,6 @@ function Board() {
     }
   };
 
-  // console.log(board);
   return (
     <DragDropContext onDragEnd={handleOnDragEnd}>
       <Droppable droppableId="board" direction="horizontal" type="column">
